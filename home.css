@@ -1,0 +1,105 @@
+/* home.css */
+body {
+    font-family: 'Cedarville Cursive', cursive, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.search input[type="text"]::placeholder {
+    color: #888;
+}
+
+.search button {
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #41b3b7;
+}
+
+.food-price {
+    color: #28c340;
+}
+
+.food-details {
+    color: #ccc;
+}
+
+.btn {
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9cbbcf;
+}
+
+/* Container for category section */
+.category {
+    padding: 4rem 0; /* Adds padding at the top and bottom */
+    background-color: #f7f7f7; /* Light background color */
+}
+
+/* Content within the category section */
+.category-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the content */
+    text-align: center; /* Centers the text */
+}
+
+/* Heading styles */
+.category-content h2 {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 700; /* Bold font */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    color: #333; /* Darker text color */
+}
+
+/* Container for the category images */
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers the images */
+    gap: 2rem; /* Space between images */
+}
+
+/* Each category box */
+.box {
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Clips child elements */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    width: calc(33.333% - 2rem); /* Three columns with gap */
+    max-width: 300px; /* Max width to keep the layout balanced */
+}
+
+/* Image styles */
+.box img {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Scales image to fit */
+    transition: transform 0.3s ease; /* Smooth image scaling */
+}
+
+/* Hover effect for the box */
+.box:hover {
+    transform: translateY(-10px); /* Lifts the box */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Hover effect for the image */
+.box:hover img {
+    transform: scale(1.1); /* Zooms in on the image */
+}
+
+/* Title styles */
+.box h3 {
+    font-size: 1.5rem; /* Medium font size */
+    font-weight: 600; /* Semi-bold font */
+    color: #333; /* Darker text color */
+    margin: 1rem 0; /* Space above and below the title */
+    text-transform: uppercase; /* Uppercase text */
+    padding: 0.5rem 1rem; /* Padding around text */
+}
+.category .image-row .box a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures text color remains unchanged */
+}
